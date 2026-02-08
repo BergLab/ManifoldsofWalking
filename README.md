@@ -2,7 +2,8 @@
 
 ## Dependencies
 The code was developed and tested in MATLABR2025B and requires MathWorks Toolboxes:
-{'Signal Processing Toolbox', 'Statistics and Machine Learning Toolbox'}
+'Signal Processing Toolbox', 
+'Statistics and Machine Learning Toolbox'
 
 ## DeNovoBase
 The script file **DeNovoBase.m** instantiates a 1D network object, samples external and intrinsic dynamical parameters across the neurons, simulates and finally plots the network activity traces in the 3D principal component space.
@@ -19,4 +20,5 @@ The script file **DeNovoPerturbation.m** does the same as the base script, but i
 of the stationary arrest state in each trial segment. In the middle of each arrest period, 400 randomly chosen units recieve a strong 100 ms long excitatory input, sampled from a Gaussian distribution with μ=80 and σ=5. 
 
 ## denovoPopulationSubset
+
 The script file **denovoPopulationSubset.m** runs similar simulations for the 3 subppopulations of interest, however, only a random fraction of the subpopulation is strongly inhibited/excited (+/-200 input) in an attempt to induce arrest across the trials. Subpopulation fractions tested here are 1, 0.5, 0.25 and 0.1.
